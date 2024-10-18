@@ -200,12 +200,12 @@ const nav = document.querySelector(".nav"),
             
             function isValidSubject(subject) {
                 const words = subject.trim().split(/\s+/);
-                return words.length >= 3; // Checks for at least 3 words
+                return words.length >= 1; // Checks for at least 3 words
             }
             
             function isValidMessage(message) {
                 const words = message.trim().split(/\s+/);
-                return words.length >= 10; // Checks for at least 10 words
+                return words.length >= 3; // Checks for at least 10 words
             }
             
             function displayFeedback(message, color) {
